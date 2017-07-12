@@ -5,7 +5,7 @@ MAINTAINER Nelson
 
 RUN echo "Include conf/extra/httpd.conf" >> /usr/local/apache2/conf/httpd.conf
 
-RUN echo "Include conf/extra/override/*.conf" >> /usr/local/apache2/conf/httpd.conf
+RUN echo "IncludeOptional conf/extra/override/*.conf" >> /usr/local/apache2/conf/httpd.conf
 
 RUN mkdir /usr/local/apache2/conf/extra/override
 
